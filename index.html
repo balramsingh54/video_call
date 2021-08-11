@@ -2,16 +2,21 @@
 <html>
 
 <head>
-  <title>Realtime communication with WebRTC</title>
+  <title>communication</title>
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
   <h1>1st communication</h1>
-
-  <video id="localVideo" autoplay playsinline></video>
-  <video id="remoteVideo" autoplay playsinline></video>
-
+  <div>
+  <div id="local">
+        <video id="localVideo" autoplay playsinline></video>
+  </div>
+    <!-- ---------------------------------------------- -->
+  <div id="remotes"> 
+        <video id="remoteVideo" autoplay playsinline></video>
+  </div>
+</div>
   <div>
     <button id="startButton">Start</button>
     <button id="callButton">Call</button>
