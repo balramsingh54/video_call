@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -7,22 +7,60 @@
 </head>
 
 <body>
-  <h1>1st communication</h1>
+
+
+  <div class="first">
+      <video id="localVideo" autoplay playsinline></video>
   <div>
-  <div id="local">
-        <video id="localVideo" autoplay playsinline></video>
-  </div>
-    <!-- ---------------------------------------------- -->
-  <div id="remotes"> 
-        <video id="remoteVideo" autoplay playsinline></video>
-  </div>
-</div>
-  <div>
-    <button id="startButton">Start</button>
-    <button id="callButton">Call</button>
-    <button id="hangupButton">Hang Up</button>
+
+  <div class="second">
+      <video id="remoteVideo" autoplay playsinline></video>
   </div>
 
+  <div class="third">
+      <button id="startButton">Start</button>
+      <button id="callButton">Call</button>
+      <button id="hangupButton">Hang Up</button>
+  </div>
+
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>communication</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+</head>
+
+<body>
+  <div class="container position-relative flex flex-column">
+
+    <div class="first">
+      <video class="w-100 h-100" id="localVideo" autoplay playsinline></video>
+      <div>
+
+      <div class="second">
+          <video id="remoteVideo" autoplay playsinline></video>
+      </div>
+
+      <!-- <div class="flex position-absolute cursor-pointer justify-content-center w-100"> -->
+      <div class="third">
+          <button id="startButton">Start</button>
+          <button id="callButton">Call</button>
+          <button id="hangupButton">Hang Up</button>
+      </div>
+
+  <div>
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="js/main.js"></script>
 </body>
